@@ -6,7 +6,6 @@
   <title>Privacy Policy – Coin Rush</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500&display=swap');
-
     :root {
       --bg:        #0d0f14;
       --surface:   #13161e;
@@ -17,203 +16,55 @@
       --text-dim:  #5a6070;
       --white:     #eef0f5;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      line-height: 1.75;
-      min-height: 100vh;
-    }
-
-    /* ── header ── */
-    header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 28px 24px 22px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    header::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(245,197,24,.07) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .coin-icon {
-      display: inline-block;
-      width: 52px; height: 52px;
-      background: linear-gradient(145deg, #f5c518, #c9900a);
-      border-radius: 50%;
-      line-height: 52px;
-      font-size: 26px;
-      text-align: center;
-      box-shadow: 0 0 24px rgba(245,197,24,.35);
-      margin-bottom: 12px;
-    }
-    header h1 {
-      font-family: 'Rajdhani', sans-serif;
-      font-size: clamp(22px, 5vw, 32px);
-      font-weight: 700;
-      color: var(--white);
-      letter-spacing: .04em;
-    }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.75; min-height: 100vh; }
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 28px 24px 22px; text-align: center; position: relative; overflow: hidden; }
+    header::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(245,197,24,.07) 0%, transparent 60%); pointer-events: none; }
+    .coin-icon { display: inline-block; width: 52px; height: 52px; background: linear-gradient(145deg, #f5c518, #c9900a); border-radius: 50%; line-height: 52px; font-size: 26px; text-align: center; box-shadow: 0 0 24px rgba(245,197,24,.35); margin-bottom: 12px; }
+    header h1 { font-family: 'Rajdhani', sans-serif; font-size: clamp(22px, 5vw, 32px); font-weight: 700; color: var(--white); letter-spacing: .04em; }
     header h1 span { color: var(--accent); }
-    .header-sub {
-      font-size: 12px;
-      color: var(--text-dim);
-      margin-top: 4px;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-
-    /* ── meta strip ── */
-    .meta-strip {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 28px;
-      background: var(--border);
-      padding: 12px 24px;
-      font-size: 12px;
-      color: var(--text-dim);
-      letter-spacing: .04em;
-    }
+    .header-sub { font-size: 12px; color: var(--text-dim); margin-top: 4px; letter-spacing: .06em; text-transform: uppercase; }
+    .meta-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; background: var(--border); padding: 12px 24px; font-size: 12px; color: var(--text-dim); letter-spacing: .04em; }
     .meta-strip span { white-space: nowrap; }
     .meta-strip a { color: var(--accent); text-decoration: none; }
-
-    /* ── layout ── */
-    main {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 40px 24px 64px;
-    }
-
-    /* ── sections ── */
-    section {
-      border-left: 3px solid var(--border);
-      padding-left: 20px;
-      margin-bottom: 36px;
-      transition: border-color .2s;
-    }
+    main { max-width: 740px; margin: 0 auto; padding: 40px 24px 64px; }
+    section { border-left: 3px solid var(--border); padding-left: 20px; margin-bottom: 36px; transition: border-color .2s; }
     section:hover { border-color: var(--accent); }
-
-    .section-label {
-      font-size: 10px;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-    section h2 {
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 10px;
-      letter-spacing: .02em;
-    }
+    .section-label { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 4px; }
+    section h2 { font-family: 'Rajdhani', sans-serif; font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 10px; letter-spacing: .02em; }
     section p { color: var(--text); margin-bottom: 10px; }
     section p:last-child { margin-bottom: 0; }
-
-    /* ── bullet list ── */
-    .data-list {
-      list-style: none;
-      margin: 10px 0;
-    }
-    .data-list li {
-      padding: 7px 12px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      margin-bottom: 6px;
-      font-size: 14px;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .data-list li::before {
-      content: '▸';
-      color: var(--accent2);
-      font-size: 11px;
-      flex-shrink: 0;
-    }
-
-    /* ── highlight card ── */
-    .highlight-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 18px;
-      margin-top: 12px;
-      font-size: 14px;
-    }
+    .data-list { list-style: none; margin: 10px 0; }
+    .data-list li { padding: 7px 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 6px; margin-bottom: 6px; font-size: 14px; color: var(--text); display: flex; align-items: center; gap: 10px; }
+    .data-list li::before { content: '▸'; color: var(--accent2); font-size: 11px; flex-shrink: 0; }
+    .highlight-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-top: 12px; font-size: 14px; }
     .highlight-card strong { color: var(--white); }
-
-    /* ── links ── */
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
-    /* ── storage badge ── */
-    .badge {
-      display: inline-block;
-      background: rgba(245,197,24,.12);
-      border: 1px solid rgba(245,197,24,.3);
-      color: var(--accent);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin-right: 6px;
-    }
-
-    /* ── footer ── */
-    footer {
-      text-align: center;
-      padding: 24px;
-      border-top: 1px solid var(--border);
-      font-size: 12px;
-      color: var(--text-dim);
-    }
+    .badge { display: inline-block; background: rgba(245,197,24,.12); border: 1px solid rgba(245,197,24,.3); color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; margin-right: 6px; }
+    footer { text-align: center; padding: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-dim); }
     footer a { color: var(--accent); }
-
-    @media (max-width: 480px) {
-      section { padding-left: 14px; }
-    }
+    @media (max-width: 480px) { section { padding-left: 14px; } }
   </style>
 </head>
 <body>
-
 <header>
   <div class="coin-icon">🪙</div>
   <h1>Coin <span>Rush</span></h1>
   <p class="header-sub">Privacy Policy</p>
 </header>
-
 <div class="meta-strip">
   <span>📱 App: Coin Rush</span>
   <span>🏢 Developer: DKM Studios (Atharva Gupta)</span>
   <span>✉️ <a href="mailto:atharvayt8065@gmail.com">atharvayt8065@gmail.com</a></span>
   <span>📅 Last Updated: June 28, 2026</span>
 </div>
-
 <main>
-
   <section>
     <div class="section-label">01 — Intro</div>
     <h2>Introduction</h2>
-    <p>DKM Studios built Coin Rush as a free game. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our app. By playing Coin DriftX, you agree to the terms described here.</p>
+    <p>DKM Studios built Coin Rush as a free game. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our app. By playing Coin Rush, you agree to the terms described here.</p>
   </section>
-
   <section>
     <div class="section-label">02 — Data</div>
     <h2>Information We Collect</h2>
@@ -225,13 +76,11 @@
       <li>App usage data for ad targeting</li>
     </ul>
   </section>
-
   <section>
     <div class="section-label">03 — Usage</div>
     <h2>How We Use Information</h2>
     <p>Data collected by AdMob is used solely to display relevant advertisements within the app. We do not sell, trade, or share your personal information with third parties outside of our advertising partners.</p>
   </section>
-
   <section>
     <div class="section-label">04 — Ads</div>
     <h2>Google AdMob</h2>
@@ -241,11 +90,10 @@
       <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>
     </div>
   </section>
-
   <section>
     <div class="section-label">05 — Storage</div>
     <h2>Local Storage</h2>
-    <p>Coin DriftX stores game progress data locally on your device:</p>
+    <p>Coin Rush stores game progress data locally on your device:</p>
     <ul class="data-list">
       <li><span class="badge">Local</span> Coins collected</li>
       <li><span class="badge">Local</span> Unlocked cars</li>
@@ -253,25 +101,21 @@
     </ul>
     <p style="margin-top:10px;">This data <strong style="color:var(--white)">never leaves your device</strong> and is not transmitted to any server.</p>
   </section>
-
   <section>
     <div class="section-label">06 — Children</div>
     <h2>Children's Privacy</h2>
     <p>Our app does not knowingly collect personal information from children under 13. Coin Rush is designed for general audiences. If you are a parent or guardian and believe your child has provided personal data, please contact us and we will take steps to remove that information.</p>
   </section>
-
   <section>
     <div class="section-label">07 — Security</div>
     <h2>Security</h2>
     <p>We value your privacy and take reasonable steps to protect your information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
   </section>
-
   <section>
     <div class="section-label">08 — Updates</div>
     <h2>Changes to This Policy</h2>
     <p>We may update our Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Changes are effective immediately upon posting. We encourage you to review this page periodically.</p>
   </section>
-
   <section>
     <div class="section-label">09 — Contact</div>
     <h2>Contact Us</h2>
@@ -281,13 +125,10 @@
       <a href="mailto:atharvayt8065@gmail.com">atharvayt8065@gmail.com</a>
     </div>
   </section>
-
 </main>
-
 <footer>
   © 2026 DKM Studios. All rights reserved. &nbsp;·&nbsp;
   <a href="mailto:atharvayt8065@gmail.com">Contact</a>
 </footer>
-
 </body>
 </html>
